@@ -24,4 +24,5 @@ for div in my_divs:
     movies[title]["type"] = types
 
 for movie in movies:
-    print(movie + "\t" + str(movies[movie]['schedule']) + str(movies[movie]['type']))
+    if not len(movies[movie]['schedule']) == 0:
+        print(movie + "\t" + str(movies[movie]['schedule']) + str(movies[movie]['type']))
